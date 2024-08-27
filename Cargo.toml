@@ -24,7 +24,8 @@ spec = "internal/config_specification.toml"
 anyhow = "1.0"
 bitcoin = { version = "0.32.2", features = ["serde", "rand-std"] }
 bitcoin_slices = { version = "0.8", features = ["bitcoin", "sha2"] }
-bitcoincore-rpc = { version = "0.19.0" }
+# bitcoincore-rpc = { version = "0.19.0" }
+bitcoincore-rpc = { git = "https://github.com/crypt0biwan/rust-bitcoincore-rpc", rev = "1a4b983" }
 configure_me = "0.4"
 crossbeam-channel = "0.5"
 dirs-next = "2.0"
